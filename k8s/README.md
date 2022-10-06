@@ -47,3 +47,33 @@ Deploy Commands Service
 ```sh
 kubectl apply -f .\commands-deploy.yaml
 ```
+
+Deploy ingress-nginx
+
+```sh
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.4.0/deploy/static/provider/cloud/deploy.yaml
+```
+
+Get k8s namespaces
+
+```sh
+kubectl get namespaces
+```
+
+Get pods in ingress-nginx namespace
+
+```sh
+kubectl get pods --namespace=ingress-nginx
+```
+
+Get services in ingress-nginx namespace
+
+```sh
+kubectl get services --namespace=ingress-nginx
+```
+
+Deploy ingress service
+
+```sh
+kubectl apply -f ingress-srv.yaml
+```

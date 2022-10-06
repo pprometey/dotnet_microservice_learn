@@ -24,7 +24,7 @@ Run docker container:
 
 ```sh
 docker run -d -p 8080:80 --name PlatformService pprometey/platformservice
-```
+``` 
 
 Push docker:
 
