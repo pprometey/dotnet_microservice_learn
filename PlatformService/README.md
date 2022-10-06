@@ -31,3 +31,17 @@ Push docker:
 ```sh
 docker push pprometey/platformservice
 ```
+
+## DB Migration
+
+Install dotnet-ef tool
+
+```sh
+dotnet tool install --global dotnet-ef
+```
+
+Add first db migration
+
+```sh
+dotnet-ef migrations add InitialMigration
+```

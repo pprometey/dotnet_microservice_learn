@@ -103,6 +103,7 @@ kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55w0rd!"
 ```
 
 Check syntaxis k8s config file
+
 ```sh
 kubectl create --dry-run=client --validate -f mssql-platform-deploy.yaml
 ```
