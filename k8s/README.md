@@ -6,7 +6,7 @@ Check state k8s
 kubectl version --short
 ```
 
-Deploy
+Deploy Platform Service
 
 ```sh
  kubectl apply -f .\platform-deploy.yaml
@@ -24,7 +24,7 @@ Get state pods
 kubectl get pods
 ```
 
-Remove deployment
+Remove deployment Platform Service
 
 ```sh
 kubectl delete deployment platform-deploy
@@ -36,3 +36,14 @@ Get kubernetes services
 kubectl get services
 ```
 
+Restart deploy Platform Service
+
+```sh
+kubectl rollout restart deployment platforms-deploy
+```
+
+Deploy Commands Service
+
+```sh
+kubectl apply -f .\commands-deploy.yaml
+```
