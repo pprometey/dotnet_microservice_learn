@@ -72,8 +72,43 @@ Get services in ingress-nginx namespace
 kubectl get services --namespace=ingress-nginx
 ```
 
-Deploy ingress service
+Deploy ingress-nginx service
 
 ```sh
 kubectl apply -f ingress-srv.yaml
+```
+
+Get k8s storages
+
+```sh
+kubectl get storageclass
+```
+
+Reserve storage for mssql
+
+```sh
+kubectl apply -f local-pvc.yaml
+```
+
+Get k8s Persistent Volume Claims
+
+```sh
+kubectl get pvc  
+```
+
+Create secret form password admin user (SA) for MSSQL
+
+```sh
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55w0rd!"
+```
+
+Check syntaxis k8s config file
+```sh
+kubectl create --dry-run=client --validate -f mssql-platform-deploy.yaml
+```
+
+Deploy mssql service
+
+```sh
+kubectl apply -f mssql-platform-deploy.yaml
 ```
