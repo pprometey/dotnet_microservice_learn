@@ -32,6 +32,8 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.{cs}]
+# CS8618: Non nullable field _name is not initialized. Consider declare the field as nullable type
+dotnet_diagnostic.CS8618.severity = none
 # Code-block preferences
 csharp_prefer_braces = true:silent
 # New line preferences
