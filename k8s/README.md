@@ -113,3 +113,9 @@ Deploy mssql service
 ```sh
 kubectl apply -f mssql-platform-deploy.yaml
 ```
+
+Deploy RabbitMQ service
+
+```sh
+kubectl apply -f rabbitmq-deploy.yaml
+```
