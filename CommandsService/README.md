@@ -38,3 +38,13 @@ Add package RabbitMQ client
 ```sh
 dotnet add package RabbitMQ.Client
 ```
+
+## GRPC
+
+Add Grpc client packages
+
+```sh
+dotnet add package Grpc.Tools
+dotnet add package Grpc.Net.Client
+dotnet add package Google.Protobuf
+```

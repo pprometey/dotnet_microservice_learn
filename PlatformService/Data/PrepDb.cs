@@ -13,14 +13,14 @@ public static class PrepDb
         }
     }
 
-    private static void SeedData(PlatformDbContext context, bool isProduction = false)
+    private static void SeedData(PlatformDbContext ?context, bool isProduction = false)
     {
         if(isProduction)
         {
             Console.WriteLine("--> Attempting to apply migrations...");
             try
             {
-                context.Database.Migrate();
+                context?.Database.Migrate();
             }
             catch(Exception ex)
             {
@@ -28,7 +28,7 @@ public static class PrepDb
             }
         }
         
-        if (!context.Platforms.Any())
+        if (context is not null && !context.Platforms.Any())
         {
             Console.WriteLine("--> Seeding data...");
 

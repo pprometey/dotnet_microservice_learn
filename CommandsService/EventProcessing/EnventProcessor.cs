@@ -67,7 +67,7 @@ public class EnventProcessor : IEventProcessor
 
         var eventType = JsonSerializer.Deserialize<GenericEventDto>(notificationMessage);
 
-        switch(eventType.Event)
+        switch(eventType?.Event)
         {
             case "Platform_Published":
                 Console.WriteLine("--> Platform Published Event Detected");

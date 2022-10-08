@@ -53,3 +53,11 @@ Add package RabbitMQ client
 ```sh
 dotnet add package RabbitMQ.Client
 ```
+
+## gRPC
+
+Add gPRC server package
+
+```sh
+dotnet add package Grpc.AspNetCore
+```

@@ -41,7 +41,7 @@ public class CommandRepo : ICommandRepo
         return _context.Platforms.ToList();
     }
 
-    public Command GetCommand(int platformId, int commandId)
+    public Command? GetCommand(int platformId, int commandId)
     {
         return _context.Commands
             .Where(c => c.PlatformId == platformId && c.Id == commandId)
