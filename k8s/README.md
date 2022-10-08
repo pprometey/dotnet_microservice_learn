@@ -36,12 +36,6 @@ Get kubernetes services
 kubectl get services
 ```
 
-Restart deploy Platform Service
-
-```sh
-kubectl rollout restart deployment platforms-deploy
-```
-
 Deploy Commands Service
 
 ```sh
@@ -118,4 +112,17 @@ Deploy RabbitMQ service
 
 ```sh
 kubectl apply -f rabbitmq-deploy.yaml
+```
+
+
+Restart deploy Platform Service
+
+```sh
+kubectl rollout restart deployment platforms-deploy
+```
+
+Restart deploy Commands Service
+
+```sh
+kubectl rollout restart deployment commands-deploy
 ```

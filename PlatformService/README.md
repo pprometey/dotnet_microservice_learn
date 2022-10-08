@@ -45,3 +45,11 @@ Add first db migration
 ```sh
 dotnet-ef migrations add InitialMigration
 ```
+
+## RabbitMQ
+
+Add package RabbitMQ client
+
+```sh
+dotnet add package RabbitMQ.Client
+```

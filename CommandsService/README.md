@@ -30,3 +30,11 @@ Push docker:
 ```sh
 docker push pprometey/commandsservice
 ```
+
+## RabbitMQ
+
+Add package RabbitMQ client
+
+```sh
+dotnet add package RabbitMQ.Client
+```
